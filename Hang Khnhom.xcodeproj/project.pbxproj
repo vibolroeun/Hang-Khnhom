@@ -14,6 +14,7 @@
 		17051C5122930E8300AB63BB /* shop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17051C5022930E8300AB63BB /* shop.xib */; };
 		170ABF21228C57E300D3E86E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170ABF1F228C57E300D3E86E /* HomeCollectionViewCell.swift */; };
 		170ABF22228C57E300D3E86E /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 170ABF20228C57E300D3E86E /* HomeCollectionViewCell.xib */; };
+		17226BE42297D4F9006818C7 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17226BE32297D4F9006818C7 /* SettingTableViewController.swift */; };
 		1780B9B7228BCF3900557D9E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780B9B6228BCF3900557D9E /* Extension.swift */; };
 		1780B9BA228BD63400557D9E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780B9B9228BD63400557D9E /* SettingViewController.swift */; };
 		1780B9BE228BD91F00557D9E /* NavigationGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780B9BD228BD91F00557D9E /* NavigationGradient.swift */; };
@@ -37,6 +38,7 @@
 		17051C5022930E8300AB63BB /* shop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = shop.xib; sourceTree = "<group>"; };
 		170ABF1F228C57E300D3E86E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		170ABF20228C57E300D3E86E /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		17226BE32297D4F9006818C7 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		1780B9B6228BCF3900557D9E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		1780B9B9228BD63400557D9E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1780B9BD228BD91F00557D9E /* NavigationGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationGradient.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				17C0C645228B233900841ED0 /* HomeViewController.swift */,
 				1780B9B9228BD63400557D9E /* SettingViewController.swift */,
 				17CB4EBE228DC6AD0011DFB3 /* ShopDetialViewController.swift */,
+				17226BE32297D4F9006818C7 /* SettingTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17226BE42297D4F9006818C7 /* SettingTableViewController.swift in Sources */,
 				17051C4B22930AAD00AB63BB /* ShopCollectionViewCell.swift in Sources */,
 				17C0C65C228B2CFB00841ED0 /* Gradient.swift in Sources */,
 				1780B9BE228BD91F00557D9E /* NavigationGradient.swift in Sources */,
