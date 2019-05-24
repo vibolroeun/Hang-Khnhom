@@ -15,10 +15,23 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         
         collectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "shopCell")
+
+    }
+    
+    func setupView() {
+    
+    self.navigationController?.navigationBar.layer.masksToBounds = false
+    self.navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
+    self.navigationController?.navigationBar.layer.shadowOpacity = 0.5
+    self.navigationController?.navigationBar.layer.shadowOffset = .zero
+    self.navigationController?.navigationBar.layer.shadowRadius = 6
+       
     
     }
+    
 
 
 }

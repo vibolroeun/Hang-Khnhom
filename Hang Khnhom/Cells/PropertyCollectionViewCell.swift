@@ -15,10 +15,14 @@ class PropertyCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        contentView.layer.cornerRadius = 6
+        contentView.layer.cornerRadius = 4
         contentView.layer.masksToBounds = true
-        contentView.layer.borderWidth = 1
-        contentView.layer.borderColor = UIColor.init(red: 10 / 255, green: 36 / 255, blue: 99 / 255, alpha: 0.5).cgColor
+        
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowRadius = 3
+        self.layer.masksToBounds = false
+        self.layer.shadowOpacity = 0.3
+        self.layer.shadowOffset = .zero
         
 
     }

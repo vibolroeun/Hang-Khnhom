@@ -19,18 +19,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="267" height="270"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bacground" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-E8-7Ry">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-E8-7Ry">
                         <rect key="frame" x="0.0" y="0.0" width="267" height="270"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nva-mI-vc8">
-                        <rect key="frame" x="8" y="8" width="227" height="30"/>
-                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klu-fD-uiP">
-                        <rect key="frame" x="8" y="242.5" width="251" height="19.5"/>
-                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4a-wA-PEY">
+                        <rect key="frame" x="0.0" y="0.0" width="267" height="270"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibol Roeun Coffee Shop" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nva-mI-vc8">
+                                <rect key="frame" x="16" y="48" width="227" height="77"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nva-mI-vc8" firstAttribute="leading" secondItem="u4a-wA-PEY" secondAttribute="leading" constant="16" id="1gu-74-qt0"/>
+                            <constraint firstItem="nva-mI-vc8" firstAttribute="top" secondItem="u4a-wA-PEY" secondAttribute="top" constant="48" id="WdE-ZC-qDG"/>
+                            <constraint firstAttribute="trailing" secondItem="nva-mI-vc8" secondAttribute="trailing" constant="24" id="lXm-j9-eoI"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klu-fD-uiP">
+                        <rect key="frame" x="16" y="218" width="227" height="36"/>
+                        <string key="text">There are many use cases where you want your app to display collections of UI elements with flexible cell sizes, that render compactly on the screen, taking up as much space as possible. </string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -38,15 +50,16 @@
             </view>
             <constraints>
                 <constraint firstItem="zu4-E8-7Ry" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7GS-bQ-laq"/>
+                <constraint firstItem="u4a-wA-PEY" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="9vJ-jw-NhR"/>
+                <constraint firstAttribute="trailing" secondItem="klu-fD-uiP" secondAttribute="trailing" constant="24" id="CXw-vw-yoX"/>
                 <constraint firstAttribute="bottom" secondItem="zu4-E8-7Ry" secondAttribute="bottom" id="Dil-Gd-fq3"/>
-                <constraint firstItem="klu-fD-uiP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="GEK-cp-6yp"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="u4a-wA-PEY" secondAttribute="trailing" id="Jtr-8S-bmm"/>
+                <constraint firstItem="u4a-wA-PEY" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="NN2-yo-EQE"/>
                 <constraint firstItem="zu4-E8-7Ry" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QI4-F3-QXK"/>
                 <constraint firstAttribute="trailing" secondItem="zu4-E8-7Ry" secondAttribute="trailing" id="T9y-Zz-f0D"/>
-                <constraint firstAttribute="trailing" secondItem="klu-fD-uiP" secondAttribute="trailing" constant="8" id="ZLe-hR-NHf"/>
-                <constraint firstAttribute="bottom" secondItem="klu-fD-uiP" secondAttribute="bottom" constant="8" id="Zlr-zY-aAL"/>
-                <constraint firstAttribute="trailing" secondItem="nva-mI-vc8" secondAttribute="trailing" constant="32" id="dwN-RA-bzB"/>
-                <constraint firstItem="nva-mI-vc8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="fVR-Jv-vKb"/>
-                <constraint firstItem="nva-mI-vc8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="qWU-KP-MTO"/>
+                <constraint firstItem="klu-fD-uiP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="VBT-wa-vgg"/>
+                <constraint firstItem="u4a-wA-PEY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bVO-RJ-pBq"/>
+                <constraint firstAttribute="bottom" secondItem="klu-fD-uiP" secondAttribute="bottom" constant="16" id="eVR-1f-0Ss"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="518" height="458"/>
@@ -55,10 +68,10 @@
                 <outlet property="shopDescriptionLabel" destination="klu-fD-uiP" id="qmH-7U-LYt"/>
                 <outlet property="shopTitleLabel" destination="nva-mI-vc8" id="eUZ-Um-olT"/>
             </connections>
-            <point key="canvasLocation" x="330" y="157"/>
+            <point key="canvasLocation" x="328.80000000000001" y="156.52173913043478"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="bacground" width="1024" height="682"/>
+        <image name="background_1" width="200" height="133"/>
     </resources>
 </document>

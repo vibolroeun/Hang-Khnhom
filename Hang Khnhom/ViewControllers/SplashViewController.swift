@@ -11,7 +11,6 @@ import UIKit
 class SplashViewController: UIViewController {
 
     @IBOutlet weak var secondLable: UILabel!
-    @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var logoImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -21,7 +20,7 @@ class SplashViewController: UIViewController {
     }
     
     func setupAnimation() {
-        firstLabel.alpha = 0.0
+    
         secondLable.alpha = 0.0
         self.logoImageView.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
         
@@ -33,7 +32,7 @@ class SplashViewController: UIViewController {
                 self.logoImageView.transform = CGAffineTransform.init(translationX: 0, y: -90)
             }) { (true) in
                 UIView.animate(withDuration: 1, animations: {
-                    self.firstLabel.alpha = 1
+                    
                     self.secondLable.alpha = 1
                 }) { (true) in
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
@@ -47,8 +46,7 @@ class SplashViewController: UIViewController {
     }
 
     func setupView() {
-        firstLabel.addCharacterSpacing(kernValue: 20)
-        secondLable.addCharacterSpacing(kernValue: 20)
+        secondLable.addCharacterSpacing(kernValue: 8)
     }
 
 }
