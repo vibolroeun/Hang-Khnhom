@@ -22,6 +22,8 @@
 		17B4E24A2298659D0054E8AB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4E2492298659D0054E8AB /* FavoritesViewController.swift */; };
 		17B4E24D229870BA0054E8AB /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4E24B229870BA0054E8AB /* SearchCollectionViewCell.swift */; };
 		17B4E24E229870BA0054E8AB /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B4E24C229870BA0054E8AB /* SearchCollectionViewCell.xib */; };
+		17BE25FF2298F9E900F5B342 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE25FD2298F9E900F5B342 /* FavoriteCollectionViewCell.swift */; };
+		17BE26002298F9E900F5B342 /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BE25FE2298F9E900F5B342 /* FavoriteCollectionViewCell.xib */; };
 		17C0C644228B233900841ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0C643228B233900841ED0 /* AppDelegate.swift */; };
 		17C0C646228B233900841ED0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0C645228B233900841ED0 /* HomeViewController.swift */; };
 		17C0C649228B233900841ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C0C647228B233900841ED0 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		17B4E2492298659D0054E8AB /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		17B4E24B229870BA0054E8AB /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		17B4E24C229870BA0054E8AB /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		17BE25FD2298F9E900F5B342 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		17BE25FE2298F9E900F5B342 /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
 		17C0C640228B233900841ED0 /* Hang Khnhom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hang Khnhom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C0C643228B233900841ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17C0C645228B233900841ED0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				17CB4EBB228DC5B80011DFB3 /* ShopDetailCollectionViewCell.xib */,
 				17B4E24B229870BA0054E8AB /* SearchCollectionViewCell.swift */,
 				17B4E24C229870BA0054E8AB /* SearchCollectionViewCell.xib */,
+				17BE25FD2298F9E900F5B342 /* FavoriteCollectionViewCell.swift */,
+				17BE25FE2298F9E900F5B342 /* FavoriteCollectionViewCell.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				17051C5122930E8300AB63BB /* shop.xib in Resources */,
 				170ABF22228C57E300D3E86E /* HomeCollectionViewCell.xib in Resources */,
 				17051C4F22930BD700AB63BB /* property.xib in Resources */,
+				17BE26002298F9E900F5B342 /* FavoriteCollectionViewCell.xib in Resources */,
 				170410AF228EBBE80022B6BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +251,7 @@
 				17226BE42297D4F9006818C7 /* SettingTableViewController.swift in Sources */,
 				17051C4B22930AAD00AB63BB /* ShopCollectionViewCell.swift in Sources */,
 				17C0C65C228B2CFB00841ED0 /* Gradient.swift in Sources */,
+				17BE25FF2298F9E900F5B342 /* FavoriteCollectionViewCell.swift in Sources */,
 				1780B9BE228BD91F00557D9E /* NavigationGradient.swift in Sources */,
 				17C0C646228B233900841ED0 /* HomeViewController.swift in Sources */,
 				17051C4D22930BAE00AB63BB /* PropertyCollectionViewCell.swift in Sources */,
