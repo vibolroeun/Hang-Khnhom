@@ -54,7 +54,7 @@ extension FavoritesViewController: UICollectionViewDelegateFlowLayout, UICollect
         
         let collectionSize = collectionView.frame.size
         
-        return CGSize.init(width: collectionSize.width, height: collectionSize.height / 4)
+        return CGSize.init(width: collectionSize.width - 16, height: collectionSize.height / 4 - 32)
         
     }
     
