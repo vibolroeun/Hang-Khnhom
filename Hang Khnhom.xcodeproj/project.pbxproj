@@ -14,6 +14,7 @@
 		17051C5122930E8300AB63BB /* shop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17051C5022930E8300AB63BB /* shop.xib */; };
 		170ABF21228C57E300D3E86E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170ABF1F228C57E300D3E86E /* HomeCollectionViewCell.swift */; };
 		170ABF22228C57E300D3E86E /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 170ABF20228C57E300D3E86E /* HomeCollectionViewCell.xib */; };
+		171163A8229C4C41003EA023 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171163A7229C4C41003EA023 /* SignInViewController.swift */; };
 		17226BE42297D4F9006818C7 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17226BE32297D4F9006818C7 /* SettingTableViewController.swift */; };
 		1780B9B7228BCF3900557D9E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780B9B6228BCF3900557D9E /* Extension.swift */; };
 		1780B9BA228BD63400557D9E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780B9B9228BD63400557D9E /* SettingViewController.swift */; };
@@ -44,6 +45,7 @@
 		17051C5022930E8300AB63BB /* shop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = shop.xib; sourceTree = "<group>"; };
 		170ABF1F228C57E300D3E86E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		170ABF20228C57E300D3E86E /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		171163A7229C4C41003EA023 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		17226BE32297D4F9006818C7 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		1780B9B6228BCF3900557D9E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		1780B9B9228BD63400557D9E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				17226BE32297D4F9006818C7 /* SettingTableViewController.swift */,
 				17B4E247229865640054E8AB /* SearchViewController.swift */,
 				17B4E2492298659D0054E8AB /* FavoritesViewController.swift */,
+				171163A7229C4C41003EA023 /* SignInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				17C0C646228B233900841ED0 /* HomeViewController.swift in Sources */,
 				17051C4D22930BAE00AB63BB /* PropertyCollectionViewCell.swift in Sources */,
 				17CB4EBC228DC5B80011DFB3 /* ShopDetailCollectionViewCell.swift in Sources */,
+				171163A8229C4C41003EA023 /* SignInViewController.swift in Sources */,
 				17C0C644228B233900841ED0 /* AppDelegate.swift in Sources */,
 				1780B9B7228BCF3900557D9E /* Extension.swift in Sources */,
 				17B4E24A2298659D0054E8AB /* FavoritesViewController.swift in Sources */,

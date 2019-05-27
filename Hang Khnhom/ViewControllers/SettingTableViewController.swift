@@ -19,14 +19,14 @@ class SettingTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 1 {
-            return 40
+            return 32
         }
         return 0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 3
+            return 5
         }
         
         return 2
