@@ -28,7 +28,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-Yl-1lS">
                                 <rect key="frame" x="8" y="8" width="220" height="17"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="14"/>
-                                <color key="textColor" red="0.039215686270000001" green="0.14117647059999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.19215686269999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_4" translatesAutoresizingMaskIntoConstraints="NO" id="7vs-ZI-iQb">
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="40" id="PCR-Tj-cvY"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like-2" translatesAutoresizingMaskIntoConstraints="NO" id="pHs-Lw-Et1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like-5" translatesAutoresizingMaskIntoConstraints="NO" id="pHs-Lw-Et1">
                                 <rect key="frame" x="8" y="79" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="YtH-1t-64x"/>
@@ -48,13 +48,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ordered" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wiu-oC-lKC">
                                 <rect key="frame" x="59" y="82.5" width="43" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
-                                <color key="textColor" red="0.039215686270000001" green="0.14117647059999999" blue="0.38823529410000002" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.78039215689999997" green="0.79215686269999996" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEF-Wd-Vai">
                                 <rect key="frame" x="36" y="81.5" width="21" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.039215686270000001" green="0.14117647059999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -100,6 +100,6 @@
     <resources>
         <image name="background_3" width="200" height="133"/>
         <image name="background_4" width="200" height="133"/>
-        <image name="like-2" width="21" height="21"/>
+        <image name="like-5" width="64" height="64"/>
     </resources>
 </document>

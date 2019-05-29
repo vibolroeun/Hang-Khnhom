@@ -31,8 +31,9 @@ class SignInViewController: UIViewController {
 
     @IBAction func nextButtonPress(_ sender: Any) {
         
-        
+        performSegue(withIdentifier: "signInSegue", sender: nil)
     }
+    
     @IBAction func socialButtonPress(_ sender: Any) {
         
     }

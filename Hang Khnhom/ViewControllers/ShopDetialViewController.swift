@@ -11,10 +11,10 @@ import UIKit
 class ShopDetialViewController: UIViewController {
     
     let images = ["background_1", "background_2", "background_3", "background_4", "background_5", "background_6"]
-    let property_icon = ["plug", "wifi", "fork", "dinner-table"]
-    let property_title = ["Plug", "Wifi", "Product", "Table"]
+    let property_icon = ["plug", "wifi", "dinner-table"]
+    let property_title = ["Plug", "Wifi", "Table"]
     
-    
+    @IBOutlet weak var productCollectionView: UICollectionView!
     @IBOutlet weak var propertyCollectionView: UICollectionView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -23,6 +23,9 @@ class ShopDetialViewController: UIViewController {
         collectionView.register(UINib(nibName: "shop", bundle: nil), forCellWithReuseIdentifier: "shopDetailCell")
         
         propertyCollectionView.register(UINib(nibName: "property", bundle: nil), forCellWithReuseIdentifier: "propertyCell")
+        
+        productCollectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "productCell")
+        
         view.sendSubviewToBack(backgroundImage)
     
     }
@@ -43,8 +46,10 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
         
         if collectionView == self.collectionView {
             return images.count
-        } else {
+        } else if collectionView == self.propertyCollectionView{
             return property_icon.count
+        } else {
+            return 10
         }
     }
     
@@ -54,9 +59,8 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "shopDetailCell", for: indexPath) as! ShopCollectionViewCell
             cell.imageView.image = UIImage(named: images[indexPath.row])
 
-            
             return cell
-        } else {
+        } else if collectionView == self.propertyCollectionView {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "propertyCell", for: indexPath) as! PropertyCollectionViewCell
             cell.propertyLabel.text = property_title[indexPath.row]
@@ -64,6 +68,10 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
             
             return cell
             
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath) as! ProductCollectionViewCell
+            
+            return cell
         }
         
     }
@@ -80,15 +88,17 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
         
         if collectionView == self.collectionView {
             return CGSize.init(width: 120, height: collectionView.frame.size.height - 16)
-        } else {
+        } else if collectionView == self.propertyCollectionView {
             return CGSize.init(width: 72, height: propertyCollectionView.frame.size.height - 8)
+        } else {
+            return CGSize.init(width: productCollectionView.frame.width - 16, height: 110)
         }
         
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.init(top: 0, left: 8, bottom: 0, right: 8)
+        return UIEdgeInsets.init(top: 4, left: 8, bottom: 4, right: 8)
     }
     
     
