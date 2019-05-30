@@ -49,7 +49,7 @@ class ShopDetialViewController: UIViewController {
     }
     
     @IBAction func viewAllButtonPressed(_ sender: Any) {
-        
+        performSegue(withIdentifier: "shopNameSegue", sender: nil)
     }
 }
 
