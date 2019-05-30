@@ -14,25 +14,42 @@ class ShopDetialViewController: UIViewController {
     let property_icon = ["plug", "wifi", "dinner-table"]
     let property_title = ["Plug", "Wifi", "Table"]
     
+    @IBOutlet weak var bookButton: UIButton!
     @IBOutlet weak var productCollectionView: UICollectionView!
     @IBOutlet weak var propertyCollectionView: UICollectionView!
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var backgroundImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.register(UINib(nibName: "shop", bundle: nil), forCellWithReuseIdentifier: "shopDetailCell")
         
         propertyCollectionView.register(UINib(nibName: "property", bundle: nil), forCellWithReuseIdentifier: "propertyCell")
         
         productCollectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "productCell")
         
         view.sendSubviewToBack(backgroundImage)
+        setUpView()
+    
+    }
+    
+    func setUpView() {
+        bookButton.layer.cornerRadius = bookButton.frame.height / 2
+        bookButton.layer.shadowOffset = .zero
+        bookButton.layer.shadowOpacity = 0.5
+        bookButton.layer.shadowRadius = 2
+        bookButton.layer.shadowColor = UIColor.gray.cgColor
     
     }
     
     @IBAction func backButtonPress(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func bookButtonPressed(_ sender: Any) {
+    
+    }
+    
+    @IBAction func viewAllButtonPressed(_ sender: Any) {
+        
     }
 }
 
@@ -44,9 +61,7 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if collectionView == self.collectionView {
-            return images.count
-        } else if collectionView == self.propertyCollectionView{
+        if collectionView == self.propertyCollectionView{
             return property_icon.count
         } else {
             return 10
@@ -55,12 +70,7 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if collectionView == self.collectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "shopDetailCell", for: indexPath) as! ShopCollectionViewCell
-            cell.imageView.image = UIImage(named: images[indexPath.row])
-
-            return cell
-        } else if collectionView == self.propertyCollectionView {
+    if collectionView == self.propertyCollectionView {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "propertyCell", for: indexPath) as! PropertyCollectionViewCell
             cell.propertyLabel.text = property_title[indexPath.row]
@@ -77,7 +87,7 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if collectionView == self.collectionView {
+        if collectionView == self.propertyCollectionView {
             
         } else {
             performSegue(withIdentifier: "propertySegue", sender: nil)
@@ -86,9 +96,7 @@ extension ShopDetialViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        if collectionView == self.collectionView {
-            return CGSize.init(width: 120, height: collectionView.frame.size.height - 16)
-        } else if collectionView == self.propertyCollectionView {
+        if collectionView == self.propertyCollectionView {
             return CGSize.init(width: 72, height: propertyCollectionView.frame.size.height - 8)
         } else {
             return CGSize.init(width: productCollectionView.frame.width - 16, height: 110)
